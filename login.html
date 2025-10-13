@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Define a linguagem da página como português do Brasil -->
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta para mobile -->
+  <title>Login - FitLife</title> <!-- Título da página -->
+
+  <!-- ------------------ começo do header ------------------ -->
+  <link rel="stylesheet" href="CSS/login.css"> <!-- Importa o CSS do login -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Ícones -->
+  <!-- ------------------ final do header  ------------------ -->
+</head>
+<body>
+
+  <!-- ------------------ começo do header ------------------ -->
+  <header id="header"> <!-- Cabeçalho do site -->
+    <a href="index.html"> <!-- Link para a página inicial -->
+      <img src="img/ft.png.png" alt="Logo do TicketSuam" class="logo-header"> <!-- Logo no header -->
+    </a>
+
+    <button id="darkModeToggle" class="dark-mode-btn"> <!-- Botão modo escuro -->
+      <i class="fas fa-moon"></i> <!-- Ícone lua -->
+    </button>
+  </header>
+  <!-- ------------------ final do header  ------------------ -->
+
+  <!-- ------------------ começo do formulário de login ------------------ -->
+  <div class="login-container"> <!-- Container do formulário -->
+    <h2>Login - FitLife</h2> <!-- Título -->
+
+    <form id="loginForm"> <!-- Formulário -->
+      
+      <!-- Campo de e-mail -->
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+      </div>
+
+      <!-- Campo de senha -->
+      <div class="form-group">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        
+        <p class="cadastro-link"> <!-- Link para cadastro -->
+          Não tem uma conta? <a href="Cadastrar.html">Cadastre-se aqui</a>
+        </p>
+      </div>
+
+      <!-- Botão de login -->
+      <button class="login-btn" type="submit">Entrar</button>
+
+      <!-- Área para mensagens de erro -->
+      <div class="error-msg" id="errorMsg"></div>
+    </form>
+  </div>
+  <!-- ------------------ final do formulário de login ------------------ -->
+
+  <!-- ------------------ começo do script ------------------ -->
+  <script src="JS/login.js"></script> <!-- JavaScript do login -->
+  <!-- ------------------ final do script ------------------ -->
+
+</body>
+</html>
