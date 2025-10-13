@@ -1,0 +1,182 @@
+/* ------------------ começo do modo claro ------------------ */
+
+/* Corpo da página no modo claro */
+body {
+  margin: 0; /* remove margens padrão */
+  font-family: Arial, sans-serif; /* fonte do site */
+  background: url(https://i.imgur.com/pOLgXPQ.png); /* imagem de fundo */
+  height: 100vh; /* ocupa toda a tela */
+  display: flex; /* ativa flexbox */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+  color: #fff; /* cor do texto */
+  transition: background-color 0.3s, color 0.3s; /* suaviza transições */
+}
+/* ------------------ final do modo claro ------------------ */
+
+
+/* ------------------ começo do header modo claro ------------------ */
+#header {
+  position: fixed; /* fica fixo no topo */
+  top: 0; /* encostado no topo */
+  width: 100%; /* ocupa largura total */
+  height: 90px; /* altura */
+  background-color: rgba(0, 0, 0, 0.0); /* transparente */
+  color: rgb(248, 248, 248); /* cor do texto */
+  display: flex; /* flexbox */
+  align-items: center; /* centralizado vertical */
+  padding: 0 20px; /* espaçamento horizontal */
+  box-sizing: border-box; /* inclui padding no cálculo */
+  z-index: 1000; /* sobrepõe os outros */
+  transition: background-color 0.3s; /* anima fundo */
+}
+/* ------------------ final do header modo claro ------------------ */
+
+
+/* ------------------ começo da logo ------------------ */
+.logo-header {
+  height: 223px; /* altura da logo */
+  width: auto; /* ajusta largura */
+  object-fit: contain; /* mantém proporção */
+}
+/* ------------------ final da logo ------------------ */
+
+
+/* ------------------ começo do container do login modo claro ------------------ */
+.login-container {
+  max-width: 500px; /* largura máxima */
+  margin: 120px auto 50px auto; /* centraliza e dá espaço */
+  background-color: #5e5e5f5e; /* fundo semitransparente */
+  padding: 30px; /* espaçamento interno */
+  border-radius: 10px; /* cantos arredondados */
+  box-shadow: 0 0 15px #2c2c54; /* sombra */
+  transition: background-color 0.3s, color 0.3s; /* transições suaves */
+}
+/* ------------------ final do container do login modo claro ------------------ */
+
+
+/* ------------------ começo do título login ------------------ */
+.login-container h2 {
+  text-align: center; /* centraliza */
+  margin-bottom: 30px; /* espaço inferior */
+  color: #056baa; /* cor azul */
+}
+/* ------------------ final do título login ------------------ */
+
+
+/* ------------------ começo dos campos do formulário ------------------ */
+.form-group {
+  margin-bottom: 20px; /* espaço entre campos */
+}
+
+.form-group label {
+  display: block; /* ocupa linha toda */
+  margin-bottom: 8px; /* espaço abaixo */
+  color: #000000; /* cor do texto */
+  font-weight: bold; /* negrito */
+}
+
+.form-group input, 
+.form-group select {
+  width: 100%; /* ocupa container */
+  padding: 10px; /* espaçamento interno */
+  font-size: 14px; /* tamanho texto */
+  border: 1px solid #080000; /* borda */
+  border-radius: 6px; /* cantos arredondados */
+  box-sizing: border-box; /* inclui padding na largura */
+}
+/* ------------------ final dos campos do formulário ------------------ */
+
+
+/* ------------------ começo do botão login modo claro ------------------ */
+.login-btn {
+  width: 100%; /* ocupa largura toda */
+  background-color: #0066cc; /* fundo azul */
+  color: #f5f1f1; /* texto claro */
+  padding: 12px; /* espaço interno */
+  font-size: 16px; /* tamanho fonte */
+  border: none; /* sem borda */
+  border-radius: 6px; /* cantos arredondados */
+  cursor: pointer; /* mãozinha */
+  transition: background-color 0.3s; /* transição cor */
+}
+
+.login-btn:hover {
+  background-color: #004c99; /* azul escuro ao passar o mouse */
+}
+/* ------------------ final do botão login modo claro ------------------ */
+
+
+/* ------------------ começo das mensagens ------------------ */
+.error-msg {
+  color: red; /* texto vermelho */
+  font-size: 14px; /* fonte pequena */
+  margin-top: 10px; /* espaço acima */
+  display: none; /* escondida inicialmente */
+}
+
+.mensagem-senha {
+  font-size: 14px; /* fonte pequena */
+  color: #555; /* cinza */
+  margin-top: 5px; /* espaço acima */
+}
+/* ------------------ final das mensagens ------------------ */
+
+
+/* ------------------ começo do botão dark mode modo claro ------------------ */
+.dark-mode-btn {
+  background: none; /* sem fundo */
+  border: none; /* sem borda */
+  color: #ffffff; /* ícone branco */
+  font-size: 24px; /* tamanho ícone */
+  cursor: pointer; /* mãozinha */
+  margin-left: auto; /* joga para a direita */
+}
+
+.dark-mode-btn:hover {
+  color: #ffd700; /* amarelo ao passar o mouse */
+}
+/* ------------------ final do botão dark mode modo claro ------------------ */
+
+
+/* ------------------ começo do modo escuro ------------------ */
+
+/* Corpo da página em modo escuro */
+body.dark-mode {
+  background-color: #5e5e5f57; /* fundo escuro */
+  color: #ffffff; /* texto branco */
+  background-image:url(https://i.imgur.com/qaDT1ct.png); /* papel de parede */
+  background-size: cover; /* cobre a tela */
+}
+
+/* Header no modo escuro */
+#header.dark-mode {
+  background-color: #5e5e5f57; /* fundo header */
+}
+
+/* Container de login no modo escuro */
+.login-container.dark-mode {
+  background-color: #000000; /* fundo preto */
+  color: #ffffff; /* texto branco */
+  box-shadow: 0 0 15px #595996; /* sombra roxa */
+}
+
+/* Labels no modo escuro */
+body.dark-mode .form-group label {
+  display: block; /* ocupa linha */
+  margin-bottom: 5px; /* espaçamento */
+  font-weight: bold; /* negrito */
+  color: #ffffff; /* branco */
+}
+
+/* Botão login no modo escuro (extra classe opcional) */
+.login-btn.dark-mode {
+  background-color: #004c99; /* azul escuro */
+}
+
+/* Botão dark mode no dark mode */
+body.dark-mode .dark-mode-btn {
+  color: #ffd700; /* dourado */
+  font-size: 24px; /* tamanho igual */
+}
+/* ------------------ final do modo escuro ------------------ */
